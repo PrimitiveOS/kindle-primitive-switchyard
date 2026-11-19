@@ -1,0 +1,11 @@
+[package]
+name = "switchyard-desktop"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+switchyard-core.workspace = true
+switchyard-render.workspace = true
+primitive-app.workspace = true
+primitive-ui.workspace = true
