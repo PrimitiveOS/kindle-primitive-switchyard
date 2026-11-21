@@ -1,27 +1,47 @@
+<div align="center">
+
+<img src="icon.png" alt="Switchyard icon" width="110">
+
 # Switchyard
 
-Set junctions and send the train to its depot in eight original track puzzles for PrimitiveOS.
+**Set the points and dispatch a train**
 
-![Four junctions and track choices in a Switchyard puzzle](docs/images/switchyard.png)
+[![Release](https://img.shields.io/github/v/release/PrimitiveOS/kindle-primitive-switchyard?label=release)](https://github.com/PrimitiveOS/kindle-primitive-switchyard/releases) [![Licence: PolyForm-Noncommercial-1.0.0](https://img.shields.io/badge/licence-PolyForm--Noncommercial--1.0.0-blue)](LICENSE) [![Store downloads](https://img.shields.io/badge/Store%20downloads-25-brightgreen)](https://primitiveos.github.io/kindle-primitive-catalog/v1/index.json)
 
-Follow the rails from **S** to **D**. Tap the outlined junctions to change their chosen branches. Solid rails are connected, and broken lines show the other branch. Tap **Dispatch** to trace the train's route. A buffer stops the train, and you can change your route and try again.
+[**Download**](https://github.com/PrimitiveOS/kindle-primitive-switchyard/releases/latest) · [**Install guide**](INSTALL.md) · [**Changelog**](CHANGELOG.md)
 
-Use **Previous** and **Next** to visit yards in any order. Junction positions and deliveries are saved separately for each yard. **Reset points** restores a yard's starting junction positions.
+</div>
 
-## Install
+---
 
-Open **Store** from Primitive Launcher, search for **Switchyard**, and install it. See the [installation guide](INSTALL.md) for local testing.
+Turn the junctions and dispatch the train to its depot. Switchyard includes eight original rail puzzles with a route trace after every dispatch.
 
-## Desktop preview
+## Quick start
 
-From this repository, with the shared Tools and Launcher repositories beside it, run:
+After setting up PrimitiveOS, open **Store** from Primitive Launcher. Choose **Switchyard** under **Apps**,
+tap **Get**, and open it from the Launcher grid. The [install guide](INSTALL.md) also covers the standalone USB package.
 
-```sh
-cargo test --locked --workspace
-cargo run --locked -p switchyard-desktop -- docs/images
-```
+## Highlights
 
-The preview dispatches a train to a buffer, changes its route, and confirms the delivery. [Delivered preview](docs/images/switchyard-delivered.png)
+- Turn the junctions and dispatch the train to its depot.
+- Switchyard includes eight original rail puzzles with a route trace after every dispatch.
+
+## Status
+
+| Device | Status |
+|---|---|
+| Kindle Oasis 3 (1264 × 1680, firmware 5.18.2) | Tested on hardware |
+
+**Current version: 0.1.1.** Changes are in [CHANGELOG.md](CHANGELOG.md).
+
+## Downloads
+
+**25 downloads** from Store, as of 2026-11-21. Store shows the same count on the app page.
+The count is GitHub downloads of this app's release packages, from the [Store catalog](https://primitiveos.github.io/kindle-primitive-catalog/v1/index.json).
+
+## Documentation
+
+[Install guide](INSTALL.md) · [Changelog](CHANGELOG.md)
 
 ## Licence
 
