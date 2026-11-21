@@ -212,7 +212,7 @@ impl View {
 impl App for View {
     fn draw(&self, canvas: &mut Canvas) {
         let width = canvas.bounds().w;
-        header(canvas, "Switchyard", "Done");
+        header(canvas, "Switchyard", "Exit");
         canvas.text(
             screen_rect(width, 40, 158, 750, 55),
             self.game.yard().title,
