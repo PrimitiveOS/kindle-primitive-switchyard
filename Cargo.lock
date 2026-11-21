@@ -51,42 +51,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "switchyard-core"
-version = "0.1.0"
-dependencies = [
- "serde",
-]
-
-[[package]]
-name = "switchyard-desktop"
-version = "0.1.0"
-dependencies = [
- "switchyard-core",
- "switchyard-render",
- "primitive-app",
- "primitive-ui",
-]
-
-[[package]]
-name = "switchyard-kindle"
-version = "0.1.0"
-dependencies = [
- "switchyard-core",
- "switchyard-render",
- "primitive-app",
-]
-
-[[package]]
-name = "switchyard-render"
-version = "0.1.0"
-dependencies = [
- "switchyard-core",
- "primitive-app",
- "primitive-ui",
- "serde_json",
-]
-
-[[package]]
 name = "bumpalo"
 version = "3.20.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -755,7 +719,10 @@ version = "0.1.0"
 dependencies = [
  "kl-core",
  "kl-kindle",
+ "libc",
  "png",
+ "primitive-device",
+ "primitive-input",
  "primitive-ui",
 ]
 
@@ -946,6 +913,42 @@ name = "stable_deref_trait"
 version = "1.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6ce2be8dc25455e1f91df71bfa12ad37d7af1092ae736f3a6cd0e37bc7810596"
+
+[[package]]
+name = "switchyard-core"
+version = "0.1.0"
+dependencies = [
+ "serde",
+]
+
+[[package]]
+name = "switchyard-desktop"
+version = "0.1.0"
+dependencies = [
+ "primitive-app",
+ "primitive-ui",
+ "switchyard-core",
+ "switchyard-render",
+]
+
+[[package]]
+name = "switchyard-kindle"
+version = "0.1.0"
+dependencies = [
+ "primitive-app",
+ "switchyard-core",
+ "switchyard-render",
+]
+
+[[package]]
+name = "switchyard-render"
+version = "0.1.0"
+dependencies = [
+ "primitive-app",
+ "primitive-ui",
+ "serde_json",
+ "switchyard-core",
+]
 
 [[package]]
 name = "syn"
